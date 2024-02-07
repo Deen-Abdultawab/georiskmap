@@ -23,25 +23,25 @@ const events = [
     {
         link: 'https://www.youtube.com/embed/HQ6flMqteBU'+ '?iv_load_policy=3&playsinline=1&rel=0',
         title: truncate(`Taiwo Ogunwunmi Discusses Impact, Recovery, and Mitigation of Flooding in Nigeria on Radio Now`,20),
-        src: '',
+        src: 'https://www.youtube.com/watch?v=CkJej36o1vU',
         id: 1
     },
     {
         link: 'https://www.youtube.com/embed/wSnlIembLZk'+ '?iv_load_policy=3&playsinline=1&rel=0',
         title: truncate(`Flood susceptibility mapping of internally displaced persons camps in Maiduguri, Borno state Nigeria. Presented during the Water@Leeds seminar: Global Flood Risk Assessment, December 8th, 2022`,20),
-        src: '',
+        src: 'https://www.youtube.com/watch?v=wSnlIembLZk',
         id: 2
     },
     {
         link: 'https://www.youtube.com/embed/CkJej36o1vU'+ '?iv_load_policy=3&playsinline=1&rel=0',
         title: truncate(`GRMI GIS DAY 2021`,20),
-        src: '',
+        src: 'https://www.youtube.com/watch?v=CkJej36o1vU',
         id: 3
     },
     {
         link: 'https://www.youtube.com/embed/iUIT_wdx3Qs'+ '?iv_load_policy=3&playsinline=1&rel=0',
         title: truncate(`Taiwo Ogunwumi Talks to TVC on the need for Effective Flood Emergency Response in Nigeria`,20),
-        src: '',
+        src: 'https://www.youtube.com/watch?v=iUIT_wdx3Qs',
         id: 4
     },
     
@@ -71,7 +71,7 @@ const events = [
                             <div class="C31 mt-30 uppercase text-[#134A39] text-[1rem] lg:text-[0.9rem] font-bold w-full mob:text-[0.7rem]">
                                {{ event.title }}
                             </div>
-                            <a href="https://youtu.be/CkJej36o1vU?si=iP9_68tBR94u0Znx" class="bg-primary500 p-3 rounded-[0.5rem] text-white hover:text-tertiary  transition font-bold w-[50%] text-center mx-auto cursor-pointer mob:text-[0.7rem]">Watch on Youtube</a>
+                            <a :href="event.src" class="bg-primary500 p-3 rounded-[0.5rem] text-white hover:text-tertiary  transition font-bold w-[50%] text-center mx-auto cursor-pointer mob:text-[0.7rem]">Watch on Youtube</a>
                         </div>
                     </article>
                 </div>

@@ -43,7 +43,7 @@ function openModal() {
 
 <template>
     <Navbar />
-    <div class="py-12 px-8 md:px-20 md" style="background-color: #EAF7F3;min-height: 100vh;">
+    <div class="py-12 px-8 md:px-20 md mob:px-4" style="background-color: #EAF7F3;min-height: 100vh;">
         <div>
             <div class="row text-center mb-5">
                 <div class="C49 cabin text-[3rem] font-bold text-center">

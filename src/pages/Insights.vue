@@ -100,11 +100,9 @@ const insights = [
     
 ]
 
-function getImageUrl(name) {
-  return new URL(`/src/assets/icons/${name}.png`, import.meta.url).href
-}
-
-
+    const getImgUrl = (path) => {
+        return new URL(`../../public/${path}`, import.meta.url).href;
+    };
 </script>
 
 <template>
@@ -122,7 +120,7 @@ function getImageUrl(name) {
                     <div class="grid grid-cols-2 mob:grid-cols-1 gap-6">
                         <a :href="card.link" v-for="card in insights" :key="card.id" class=" transition p-4 rounded-[0.5rem] cursor-pointer">
                             <div class="pic hover:scale-105 duration-500">
-                                <img :src="`../../public/${card.src}`" class="img-fluid overflow-hidden h-[15rem] w-full object-fill rounded-t-[0.5rem]" alt="Responsive image">
+                                <img :src="getImgUrl(card.src)" class="img-fluid overflow-hidden h-[15rem] w-full object-fill rounded-t-[0.5rem]" alt="Responsive image">
                             </div>
                             <div class="C31 mt-3 uppercase text-[#134A39] text-[1rem] lg:text-[1rem] font-bold mob:text-[0.7rem]">
                                  {{ card.title }}

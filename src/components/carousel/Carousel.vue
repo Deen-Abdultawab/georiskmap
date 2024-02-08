@@ -1,8 +1,8 @@
- <template>
-  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints" class="gap-4 flex">
+<template>
+  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px]  rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
+        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
         'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
 
           <div class="flex flex-col p-3 w-full">
@@ -43,6 +43,14 @@
   transition: 0.5s;
 }
 
+.carousel__viewport ol {
+  gap: 4rem;
+}
+
+.carousel__viewport li {
+  width: 100%;
+}
+
 .carousel {
   width: 95%;
   margin: 0 auto;
@@ -78,6 +86,12 @@
 .carousel .carousel-control:hover {
   background: #164133;
   /* opacity: 1; */
+}
+
+@media only screen and (max-width:1024px){
+  .carousel__viewport ol {
+    gap: 0rem;
+  }
 }
 </style>
   

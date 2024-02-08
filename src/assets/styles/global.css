@@ -6,5 +6,5 @@
 
 img {
     display: block;
-    object-fit: cover;
+    object-fit: fill;
 }

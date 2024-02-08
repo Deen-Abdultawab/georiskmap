@@ -1,8 +1,8 @@
-<template>
-  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
+ <template>
+  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints" class="gap-4 flex">
     <Slide v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
+        <div class="card m-3 text-white h-[450px]  rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
         'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
 
           <div class="flex flex-col p-3 w-full">

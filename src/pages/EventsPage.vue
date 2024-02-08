@@ -62,16 +62,16 @@ const events = [
             </div>
 
             <div class="">
-                <div class="grid grid-cols-temp2 gap-6 midDesk:grid-cols-1">
-                    <article v-for="event in events" :key="event.id" id="card" class=" shadow-md shadow-primary500 hover:shadow-brandgreen transition grid grid-rows-row h-full gap-4 p-4 rounded-[0.5rem] cursor-pointer">
+                <div class="grid grid-cols-2 gap-6 midDesk:grid-cols-1">
+                    <article v-for="event in events" :key="event.id" id="card" class=" transition grid grid-rows-row h-full gap-4 p-4 rounded-[0.5rem] cursor-pointer">
                         <div class="pic hover:scale-105 transition mob:basis-6/12">
-                            <iframe class="w-full h-full rounded-[0.5rem]" :src="event.link" title="{{ event.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="w-full  h-[15rem]  rounded-[0.5rem]" :src="event.link" title="{{ event.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="flex flex-col justify-between gap-4">
                             <div class="C31 mt-30 uppercase text-[#134A39] text-[1rem] lg:text-[0.9rem] font-bold w-full mob:text-[0.7rem]">
                                {{ event.title }}
                             </div>
-                            <a :href="event.src" class="bg-primary500 p-3 rounded-[0.5rem] text-white hover:text-tertiary  transition font-bold w-[50%] text-center mx-auto cursor-pointer mob:text-[0.7rem]">Watch on Youtube</a>
+                            <a :href="event.src" class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold hover:bg-primary500  transition w-[40%] text-center mx-auto cursor-pointer text-[0.7rem]">Watch on Youtube</a>
                         </div>
                     </article>
                 </div>

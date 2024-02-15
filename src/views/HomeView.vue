@@ -9,6 +9,7 @@ import OurVision from '../components/OurVision.vue'
 import OurMission from '../components/OurMission.vue'
 import AppsAndData from '../components/AppsAndData.vue'
 import GetInvolved from '../components/GetInvolved.vue'
+import ReportFlood from '../components/ReportFlood.vue'
 import Footer from '../components/Footer.vue'
 // import "../assets/styles/main.scss"
 import "../assets/styles/App.scss"
@@ -28,6 +29,7 @@ import "../assets/styles/App.scss"
     <WhatWeDo />
     <OurVision />
     <OurMission />
+    <ReportFlood />
     <AppsAndData />
     <GetInvolved />
     <Footer />

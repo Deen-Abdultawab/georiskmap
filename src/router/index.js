@@ -68,6 +68,16 @@ const router = createRouter({
       name: "Events",
       component: EventsPage,
     },
+    {
+      path: "/research",
+      name: "Research",
+      component: () => import('../pages/Research.vue'),
+    },
+    {
+      path: "/floodevent",
+      name: "floodEvent",
+      component: () => import('../pages/FloodEvent.vue'),
+    },
   ]
 })
 

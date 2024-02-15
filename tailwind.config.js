@@ -12,13 +12,15 @@ export default {
         brandgray: '#1A1A1A',
         tertiary: '#415754',
         textgreen: '#134A39',
-        primary500: '#2DB187'
-
-        
+        primary500: '#2DB187',
+        foundation: '#207E60'
       },
       gridTemplateColumns: {
         'temp': '2.5fr 2fr',
-        'temp2': 'repeat(auto-fit, minmax(300px, 1fr))'
+        'temp2': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'temp3': 'auto 1fr',
+        'temp4': 'repeat(3, 1fr)',
+        'temp5': 'repeat(5, 1fr)'
       },
       gridTemplateRows: {
         'row': 'auto 1fr',
@@ -30,6 +32,10 @@ export default {
         'mob': {'max': '600px'},
         'midDesk': {'max': '800px'},
         'desk': {'min': '900px'},
+      },
+      fontFamily: {
+        'cabin': ['Cabin'],
+        'merri': ['Merriweather']
       }
     },
   },

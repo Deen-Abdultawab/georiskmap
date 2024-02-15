@@ -29,7 +29,11 @@ const showMenu = ref(false);
 </div>
 
     <div class="lg:flex hidden transition">
-      <button class=" transition px-6 py-4 text-[1rem] bg-brandgreen text-white hover:text-brandgreen hover:bg-white hover:outline-2 shadow-md  merri rounded-[0.25rem]">View Flood Level</button>
+      <button class=" transition px-6 py-4 text-[1rem] bg-brandgreen text-white hover:text-brandgreen hover:bg-white hover:outline-2 shadow-md  merri rounded-[0.25rem]">
+        <router-link :to="{ name: 'floodEvent'}">
+          View Flood Event
+        </router-link>
+      </button>
     </div>
 </div>
 

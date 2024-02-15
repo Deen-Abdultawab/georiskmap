@@ -1,11 +1,105 @@
+<script >
+import { defineComponent, ref } from 'vue'
+// import {useFrameStore} from "../../store/store"
+import { Carousel, Navigation, Slide } from 'vue3-carousel'
+import AppsData from "../../utils/AppsData"
+import ShowMap from '../modals/ShowMap.vue';
+import 'vue3-carousel/dist/carousel.css'
+
+
+// const store = useFrameStore()
+const iframeVisible = ref(false);
+const selectedSlide = ref(null);
+const iframeSrc = ref(null);
+const isOpen = ref(false)
+
+const sel = (slide) => {
+  selectedSlide.value = slide
+}
+
+function showIframe(slide) {
+  selectedSlide.value = slide
+ if(selectedSlide.value.id){
+   isOpen.value = true
+ } 
+}
+
+function closeIframe() {
+  isOpen.value = false;
+  iframeVisible.value = false;
+}
+
+function closeModal() {
+  isOpen.value = false
+  iframeVisible.value = false
+}
+function openModal() {
+
+  isOpen.value = true
+}
+
+const getImgUrl = (path) => {
+      return new URL(`../../../public/${path}`, import.meta.url).href;
+  };
+
+
+export default defineComponent({
+  name: 'Breakpoints',
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+    ShowMap,
+  },
+  data: () => ({
+    showIframe: showIframe,
+    selectedSlide: selectedSlide,
+    iframeSrc: iframeSrc,
+    iframeVisible: iframeVisible,
+    closeIframe: closeIframe,
+    openModal: openModal,
+    closeModal: closeModal,
+    sel: sel,
+    AppsData: AppsData,
+    isOpen: isOpen,
+    getImgUrl: getImgUrl,
+    // carousel settings
+    settings: {
+      itemsToShow: 1,
+      snapAlign: 'center',
+    },
+    // breakpoints are mobile first
+    // any settings not specified will fallback to the carousel settings
+    breakpoints: {
+      // 700px and up
+      700: {
+        itemsToShow: 2,
+        snapAlign: 'center',
+      },
+      // 1024 and up
+      1024: {
+        itemsToShow: 3,
+        snapAlign: 'start',
+      },
+      1260: {
+        itemsToShow: 4,
+        snapAlign: 'start',
+      },
+    },
+  }),
+})
+</script>
+
 <template>
   <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in AppsData" :key="slide.id">
       <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end" :style="{'background-image':`url(${slide.placeholder})`,
-        'background-size': 'cover', 'background-repeat': 'no-repeat','background-position': 'center'}">
+        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end relative" >
+          <img :src="getImgUrl(slide.placeholder)" alt="" class="absolute top-0 left-0 w-full h-full z-[1] object-fill">
+          <div class="absolute top-0 left-0 w-full h-full z-[2] bg-[rgba(0,0,0,0.3)]">
+          </div>
 
-          <div class="flex flex-col p-3 w-full">
+          <div class="flex flex-col p-3 w-full z-[2]">
             <div class="flex flex-col merri" style="padding: 0;">
               <div class="media-body flex flex-col" style="align-items: flex-start;">
                 <div class="M20 text-white font-normal text-[1.4rem] d-block" style="margin-bottom: 4px;">
@@ -95,89 +189,5 @@
 }
 </style>
   
-<script >
-import { defineComponent, ref } from 'vue'
-// import {useFrameStore} from "../../store/store"
-import { Carousel, Navigation, Slide } from 'vue3-carousel'
-import AppsData from "../../utils/AppsData"
-import ShowMap from '../modals/ShowMap.vue';
-import 'vue3-carousel/dist/carousel.css'
 
-
-// const store = useFrameStore()
-const iframeVisible = ref(false);
-const selectedSlide = ref(null);
-const iframeSrc = ref(null);
-const isOpen = ref(false)
-
-const sel = (slide) => {
-  selectedSlide.value = slide
-}
-
-function showIframe(slide) {
-  selectedSlide.value = slide
- if(selectedSlide.value.id){
-   isOpen.value = true
- } 
-}
-
-function closeIframe() {
-  isOpen.value = false;
-  iframeVisible.value = false;
-}
-
-function closeModal() {
-  isOpen.value = false
-  iframeVisible.value = false
-}
-function openModal() {
-
-  isOpen.value = true
-}
-
-export default defineComponent({
-  name: 'Breakpoints',
-  components: {
-    Carousel,
-    Slide,
-    Navigation,
-    ShowMap,
-  },
-  data: () => ({
-    showIframe: showIframe,
-    selectedSlide: selectedSlide,
-    iframeSrc: iframeSrc,
-    iframeVisible: iframeVisible,
-    closeIframe: closeIframe,
-    openModal: openModal,
-    closeModal: closeModal,
-    sel: sel,
-    AppsData: AppsData,
-    isOpen: isOpen,
-    // carousel settings
-    settings: {
-      itemsToShow: 1,
-      snapAlign: 'center',
-    },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
-    breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 2,
-        snapAlign: 'center',
-      },
-      // 1024 and up
-      1024: {
-        itemsToShow: 3,
-        snapAlign: 'start',
-      },
-      1260: {
-        itemsToShow: 4,
-        snapAlign: 'start',
-      },
-    },
-  }),
-})
-</script>
   

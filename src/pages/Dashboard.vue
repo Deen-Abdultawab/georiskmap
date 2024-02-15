@@ -1,15 +1,30 @@
 <script setup>
+import {ref, onMounted} from "vue"
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue';
+import Spinner from '../components/Spinner.vue';
 import "../assets/styles/App.scss"
+
+const isLoading = ref(true)
+
+onMounted(() => {
+    setTimeout(()=>{
+        isLoading.value = false
+    },3000)
+})
+
 
 </script>
 
 <template>
     <Navbar />
+    
     <div class="py-4 px-6 -z-0 mob:px-4" style="background-color: #353535;">
+        <div class="h-[100vh] w-full grid place-items-center" v-if="isLoading">
 
-        <div class="demo">
+            <Spinner/>
+        </div>
+        <div class="demo" v-if="!isLoading">
             <div class="">
                 <div class="row text-center">
                     <!-- <div class="C49 text-white text-[3.08rem] font-semibold text-center">

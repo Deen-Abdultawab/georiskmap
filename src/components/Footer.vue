@@ -42,6 +42,11 @@ console.log(emailRef.value);
                         <img src='../assets/icons/Twitter.png' alt="GRMI TWITTER">
                     </a>
                 </div>
+                <div>
+                    <a href="https://www.youtube.com/@geohazardsriskmappinginiti3596">
+                        <img src='../assets/icons/youtube.png' alt="GRMI YOUTUBE">
+                    </a>
+                </div>
             </div>
             </div>
            

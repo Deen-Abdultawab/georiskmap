@@ -84,13 +84,6 @@ const insights = [
         id: 9
     },
     {
-        link: 'https://sambusgeospatial.com/wp-content/uploads/2023/11/Sambus-Newsletter-8th-Edition-3.pdf',
-        title: `sambus news letter`,
-        formatTitle: truncate(`sambus news letter`,11),
-        src: 'ins10.png',
-        id: 10
-    },
-    {
         link: 'https://www.esri.com/en-us/lg/industry/natural-resources/stories/harnessing-geospatial-technology-to-support-early-flood-warning-in-nigeria',
         title: `Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,
         formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),

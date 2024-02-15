@@ -28,7 +28,7 @@ import "../assets/styles/App.scss"
     </div>
 
 
-    <div class="section section-lg pt-0 relative md:w-[80%] w-[95%] mx-auto mt-[-20rem]">
+    <div class="section section-lg pt-0 relative w-[90%] mx-auto mt-[-20rem]">
       <div class=" mt-n8 mt-lg-n13">
         <div class="row justify-content-center">
           <div class="">
@@ -60,13 +60,34 @@ import "../assets/styles/App.scss"
                       ● Ensuring these early warning signal maps are accessible to the broader public, forming a nexus of information that benefits emergency institutions and stakeholders alike, fostering a community united in resilience and preparedness.
                     </p>
                   </div>
-                  <div class=" text-center" >
+                  <div class="" >
                     <iframe class="w-full h-[200px] md:w-full md:h-[380px] lg:w-full lg:h-[700px]" 
                       src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
                       title="YouTube video player" frameborder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                       allowfullscreen>
                     </iframe>
+                    <article id="profile">
+                      <h3 class="font-cabin text-brandgreen font-bold text-[1.9rem] leading-none mt-[1rem]"> Taiwo Ogunwumi</h3>
+                      <p class="font-merri text-primary500 text-[1.25rem] leading-none mt-[0.5rem]">Founder</p>
+                      <div class="flex gap-4 mt-[0.5rem]">
+                      <div>
+                          <a href="https://www.linkedin.com/company/geohazards-risk-mapping-initiative/">
+                              <img src='../assets/icons/userTwitter.png' alt="GRMI LINKEDIN">
+                          </a>
+                      </div>
+                      <div>
+                          <a href=https://twitter.com/GeohazardMaps>
+                              <img src='../assets/icons/userLinkedin.png' alt="GRMI TWITTER">
+                          </a>
+                      </div>
+                      <div>
+                          <a href="https://www.youtube.com/@geohazardsriskmappinginiti3596">
+                              <img src='../assets/icons/userMail.png' alt="GRMI YOUTUBE">
+                          </a>
+                      </div>
+                  </div>
+                    </article>
                   </div>
                   </div>
                   <div class="images-container ">
@@ -144,11 +165,6 @@ import "../assets/styles/App.scss"
   overflow: auto;
 }
 
-.banner {
-  padding-left: 120px;
-  margin: 0 120px;
-}
-
 
 .text-container p{
   font-family: 'Merriweather', serif;
@@ -159,25 +175,5 @@ import "../assets/styles/App.scss"
   padding: 37px 0;
 }
 
-@media (min-width: 992px) {
 
-  .text-container {
-    padding: 0 12px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1488px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .banner {
-    padding-left: 60px;
-    margin: 0;
-  }
-
-}
 </style>

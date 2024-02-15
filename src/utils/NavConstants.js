@@ -145,7 +145,7 @@ const NavData = [
             },
             {
                 id: 3,
-                to: "/",
+                to: "/research",
                 desc: "Research Papers",
             },
             {

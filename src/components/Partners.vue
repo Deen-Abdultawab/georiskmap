@@ -1,7 +1,7 @@
 
 
 <template>
-  <section class="px-[7rem] py-[2rem] mob:p-6 grid grid-cols-temp3 items-center gap-[2.75rem] tab:grid-cols-1 tab:text-center">
+  <section class="px-[7rem] py-[2rem] mob:p-6 grid grid-cols-temp3 items-center gap-[2.75rem] tab:grid-cols-1 tab:text-center mob:gap-[1.75rem]">
     <div>
       <h3 class="font-cabin text-[3rem] text-textgreen tab:text-[1.5rem] tab2:text-[2rem] font-bold">Global Appearances</h3>
     </div>

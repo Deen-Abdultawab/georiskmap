@@ -60,7 +60,7 @@ import "../assets/styles/App.scss"
                       ● Ensuring these early warning signal maps are accessible to the broader public, forming a nexus of information that benefits emergency institutions and stakeholders alike, fostering a community united in resilience and preparedness.
                     </p>
                   </div>
-                  <div class="" >
+                  <div class="h-full" >
                     <iframe class="w-full h-[200px] md:w-full md:h-[380px] lg:w-full lg:h-[700px]" 
                       src="https://www.youtube.com/embed/sAx462Sc004?si=uClXD1ueAA_bv1tz&amp;start=1" 
                       title="YouTube video player" frameborder="0" 
@@ -72,18 +72,18 @@ import "../assets/styles/App.scss"
                       <p class="font-merri text-primary500 text-[1.25rem] leading-none mt-[0.5rem]">Founder</p>
                       <div class="flex gap-4 mt-[0.5rem]">
                       <div>
-                          <a href="https://www.linkedin.com/company/geohazards-risk-mapping-initiative/">
+                          <a href="https://www.linkedin.com/in/taiwo-ogunwumi/">
                               <img src='../assets/icons/userTwitter.png' alt="GRMI LINKEDIN">
                           </a>
                       </div>
                       <div>
-                          <a href=https://twitter.com/GeohazardMaps>
+                          <a href="https://twitter.com/T_Ogunwumi">
                               <img src='../assets/icons/userLinkedin.png' alt="GRMI TWITTER">
                           </a>
                       </div>
                       <div>
-                          <a href="https://www.youtube.com/@geohazardsriskmappinginiti3596">
-                              <img src='../assets/icons/userMail.png' alt="GRMI YOUTUBE">
+                          <a href="taiwoogunwumi@yahoo.com">
+                              <img src='../assets/icons/userMail.png' alt="GRMI MAIL">
                           </a>
                       </div>
                   </div>

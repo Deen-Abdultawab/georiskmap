@@ -21,10 +21,17 @@ function truncate(str, no_words) {
 
 const insights = [
     {
+        link: 'https://www.esri.com/en-us/lg/industry/natural-resources/stories/harnessing-geospatial-technology-to-support-early-flood-warning-in-nigeria',
+        title: `Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,
+        formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
+        src: 'ins11.png',
+        id: 11
+    },
+    {
         link: 'https://water.leeds.ac.uk/news/waterleeds-seminar-global-flood-risk-assessment-regional-realities/',
         title: 'Global Flood Risk Assessment - Regional Realities',
         formatTitle: truncate(`Global Flood Risk Assessment - Regional Realities`,11),
-        src: 'ins1.png',
+        src: 'ins13.jpg',
         id: 1
     },
     {
@@ -63,13 +70,6 @@ const insights = [
         id: 6
     },
     {
-        link: 'https://storymaps.arcgis.com/stories/39d5b1d1e2114b74aebdf8fe73ecb993',
-        title: `Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,
-        formatTitle: truncate(`Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,11),
-        src: 'ins7.png',
-        id: 7
-    },
-    {
         link: 'https://www.icirnigeria.org/study-in-ibeju-lekki-32685-primary-school-pupils-are-at-risk-of-flooding/',
         title: `Study: In Ibeju-Lekki, 32,685 primary school pupils are at risk of flooding`,
         formatTitle: truncate(`Study: In Ibeju-Lekki, 32,685 primary school pupils are at risk of flooding`,11),
@@ -84,11 +84,32 @@ const insights = [
         id: 9
     },
     {
-        link: 'https://www.esri.com/en-us/lg/industry/natural-resources/stories/harnessing-geospatial-technology-to-support-early-flood-warning-in-nigeria',
-        title: `Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,
+        link: 'https://sambusgeospatial.com/wp-content/uploads/2023/11/Sambus-Newsletter-8th-Edition-3.pdf',
+        title: `sambus news letter`,
+        formatTitle: truncate(`sambus news letter`,11),
+        src: 'ins10.png',
+        id: 10
+    },
+    {
+        link: 'https://storymaps.arcgis.com/stories/a34fab4b205048e6af22ec8df1f83e8e',
+        title: `In commensuration of the GIS Day 2021, a youth-led initiative "Geohazard Risk Mapping" Initiative hosted a virtual GISday event.`,
         formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
-        src: 'ins11.png',
-        id: 11
+        src: 'default1.png',
+        id: 12
+    },
+    {
+        link: 'https://globalplatform.undrr.org/conference-event/improving-flood-preparedness-communities-nigeria-through-provision-flood-early',
+        title: `Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps.`,
+        formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
+        src: 'default1.png',
+        id: 12
+    },
+    {
+        link: 'https://undark.org/2023/05/04/mapping-flood-risk-for-nigerias-internally-displaced-people/',
+        title: `Mapping Flood Risk for Nigeria’s Internally Displaced People`,
+        formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
+        src: 'ins12.jpg',
+        id: 14
     },
     
 ]
@@ -104,7 +125,7 @@ const insights = [
         <div>
             <div class="row text-center mb-5">
                 <div class="text-[2.8rem] md:text-[3.08rem] font-extrabold cabin uppercase">
-                   Insights
+                   News and Media
                 </div>
             </div>
 

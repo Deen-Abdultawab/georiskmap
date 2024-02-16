@@ -21,32 +21,43 @@ function truncate(str, no_words) {
 
 const floodEvents = [
     {
-        link: 'https://www.arcgis.com/home/item.html?id=2b0fa66b05534e7780e7396234b7c6f3',
+        link: 'https://www.arcgis.com/apps/webappviewer/index.html?id=2b0fa66b05534e7780e7396234b7c6f3',
         title: 'Flood Susceptibility Map of Ikorodu',
         formatTitle: truncate(`Global Flood Risk Assessment - Regional Realities`,11),
         src: 'default1.png',
-        id: 1
-    },
-    {
-        link: 'https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria',
-        title: `humanitarian mapping exercise for improvement in hiv aids gnder based violence projects in nigeria`,
-        formatTitle: truncate(`humanitarian mapping exercise for improvement in hiv aids gnder based violence projects in nigeria`,11),
-        src: 'default1.png',
-        id: 2
+        id: 1,
+        tag: 'map'
     },
     {
         link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=d07dba63dbd84fbbb555d6c6087759f3',
         title: `Flood Susceptibility Map of Ilorin`,
         formatTitle: truncate(`using geospatial technology in geohazard mapping saves lives`,11),
         src: 'default1.png',
-        id: 3
+        id: 3,
+        tag: 'map'
     },
     {
-        link: 'Flood Susceptibility Map of Ikorodu',
+        link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=7cba8204d65c4ceda63c7c89e632606b',
         title: `Flood Susceptibility Map of Maiduguri City`,
         formatTitle: truncate(`All about GRMI hashnode mapathon`,11),
         src: 'default1.png',
-        id: 4
+        id: 4,
+        tag: 'map'
+    },
+    {
+        link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=1205a4ecde984a55841f93e837828a70',
+        title: `Flood Susceptibility Map of Ilorin`,
+        src: 'default1.png',
+        id: 2,
+        tag: 'map'
+    },
+    {
+        link: 'https://storymaps.arcgis.com/stories/39d5b1d1e2114b74aebdf8fe73ecb993',
+        title: `Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,
+        formatTitle: truncate(`Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,11),
+        src: 'default1.png',
+        tag: 'storymap',
+        id: 7
     },
     
 ]
@@ -62,7 +73,7 @@ const floodEvents = [
         <div>
             <div class="row text-center mb-5">
                 <div class="text-[2.8rem] md:text-[3.08rem] font-extrabold cabin uppercase">
-                   past flood events
+                   flood maps
                 </div>
             </div>
 
@@ -75,6 +86,9 @@ const floodEvents = [
                             </div>
                             <div class="C31 mt-3 uppercase text-[#134A39] text-[1rem] lg:text-[1rem] font-bold mob:text-[0.7rem]">
                                  {{ card.title }}
+                            </div>
+                            <div class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold hover:bg-primary500  transition w-[40%] text-center mx-auto cursor-pointer text-[0.7rem] uppercase mt-4">
+                                view {{ card.tag }}
                             </div>
                         </a>
                     </div>

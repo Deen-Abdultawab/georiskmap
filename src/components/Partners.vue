@@ -6,17 +6,17 @@
       <h3 class="font-cabin text-[3rem] text-textgreen tab:text-[1.5rem] tab2:text-[2rem] font-bold">Global Appearances</h3>
     </div>
     <div class="flex flex-col">
-      <article class="grid grid-cols-temp4 place-items-center gap-[2rem]">
-        <img src="../assets/icons/deltares.png" class="justify-self-start" alt="">
+      <article class="grid grid-cols-2 place-items-center gap-[2rem]">
+        <img src="../assets/icons/undark.jfif" class=" w-[10rem] justify-self-center" alt="">
         <img src="../assets/icons/businessday.png" class="" alt="">
-        <img src="../assets/icons/blue.png" class="" alt="">
+        <!-- <img src="../assets/icons/blue.png" class="" alt=""> -->
       </article>
-      <article class="grid grid-cols-temp5 place-items-center gap-[2rem]">
+      <article class="grid grid-cols-4 place-items-center gap-[2rem]">
         <img src="../assets/icons/icir.png" class="w-[16rem]" alt="">
         <img src="../assets/icons/esri.png" class="w-[5rem]" alt="">
         <img src="../assets/icons/hot.png" class="" alt="">
         <img src="../assets/icons/fair.png" class="" alt="">
-        <img src="../assets/icons/mark.png" class="" alt="">
+        <!-- <img src="../assets/icons/mark.png" class="" alt=""> -->
       </article>
     </div>
   </section>

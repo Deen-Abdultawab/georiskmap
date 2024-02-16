@@ -93,7 +93,7 @@ const NavData = [
             {
                 id: 2,
                 to: "/dashboard",
-                desc: "Dashboard",
+                desc: "Past Flood Events",
             },
            
            
@@ -136,7 +136,7 @@ const NavData = [
             {
                 id: 1,
                 to: "/insights",
-                desc: "Insights",
+                desc: "News and Media",
             },
             {
                 id: 2,

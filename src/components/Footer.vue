@@ -64,7 +64,7 @@ console.log(emailRef.value);
                     </span>
                 </router-link> -->
 
-                <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/news-and-media"
+                <router-link class="M16 white links text-nowrap" @click="scrollToTop" to="/insights"
                     style="margin-bottom: 12px;">
                     <span>
                         News and Media

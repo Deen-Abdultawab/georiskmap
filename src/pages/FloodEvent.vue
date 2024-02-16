@@ -59,6 +59,14 @@ const floodEvents = [
         tag: 'storymap',
         id: 7
     },
+    {
+        link: 'https://storymaps.arcgis.com/stories/528572dd623141589a03bbba059df683',
+        title: `Mapping of Flood-Prone Areas in Kogi State Nigeria`,
+        formatTitle: truncate(`Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,11),
+        src: 'default1.png',
+        tag: 'storymap',
+        id: 7
+    },
     
 ]
 

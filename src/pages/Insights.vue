@@ -24,42 +24,42 @@ const insights = [
         link: 'https://www.esri.com/en-us/lg/industry/natural-resources/stories/harnessing-geospatial-technology-to-support-early-flood-warning-in-nigeria',
         title: `Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,
         formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
-        src: 'ins11.png',
+        src: 'esri.jpeg',
         id: 11
     },
     {
         link: 'https://water.leeds.ac.uk/news/waterleeds-seminar-global-flood-risk-assessment-regional-realities/',
-        title: 'Global Flood Risk Assessment - Regional Realities',
+        title: 'water@leeds seminar: Global Flood Risk Assessment – Regional Realities',
         formatTitle: truncate(`Global Flood Risk Assessment - Regional Realities`,11),
-        src: 'ins13.jpg',
+        src: 'leeds.jpeg',
         id: 1
     },
     {
         link: 'https://www.fairplanet.org/story/youth-led-initiative-tackles-nigerias-flood-crisis/',
         title: `youth led initiative tackles nigeria's flood crisis`,
         formatTitle: truncate(`youth led initiative tackles nigeria's flood crisis`,11),
-        src: 'ins2.png',
+        src: 'fair.png',
         id: 2
     },
     {
         link: 'https://precisegis.com.ng/humanitarian-mapping-exercise-for-improvement-in-hiv-aids-gender-based-violence-gbv-projects-in-nigeria',
         title: `humanitarian mapping exercise for improvement in hiv aids gnder based violence projects in nigeria`,
         formatTitle: truncate(`humanitarian mapping exercise for improvement in hiv aids gnder based violence projects in nigeria`,11),
-        src: 'ins3.png',
+        src: 'mapathon1.jpeg',
         id: 3
     },
     {
         link: 'https://geospatiallypodcast.wordpress.com/2021/04/01/using-geospatial-technology-in-geohazard-mapping-saves-lives/',
         title: `using geospatial technology in geohazard mapping saves lives`,
         formatTitle: truncate(`using geospatial technology in geohazard mapping saves lives`,11),
-        src: 'ins4.png',
+        src: 'podcast.jpeg',
         id: 4
     },
     {
         link: 'https://grmi.hashnode.dev/mapathon',
         title: `All about GRMI hashnode mapathon`,
         formatTitle: truncate(`All about GRMI hashnode mapathon`,11),
-        src: 'ins5.png',
+        src: 'mapathon.jpeg',
         id: 5
     },
     {

@@ -72,13 +72,13 @@ import "../assets/styles/App.scss"
                       <p class="font-merri text-primary500 text-[1.25rem] leading-none mt-[0.5rem]">Founder</p>
                       <div class="flex gap-4 mt-[0.5rem]">
                       <div>
-                          <a href="https://www.linkedin.com/in/taiwo-ogunwumi/">
-                              <img src='../assets/icons/userTwitter.png' alt="GRMI LINKEDIN">
+                          <a href="https://twitter.com/T_Ogunwumi">
+                              <img src='../assets/icons/userTwitter.png' alt="GRMI Twitter">
                           </a>
                       </div>
                       <div>
-                          <a href="https://twitter.com/T_Ogunwumi">
-                              <img src='../assets/icons/userLinkedin.png' alt="GRMI TWITTER">
+                          <a href="https://www.linkedin.com/in/taiwo-ogunwumi/">
+                              <img src='../assets/icons/userLinkedin.png' alt="GRMI linkedin">
                           </a>
                       </div>
                       <div>

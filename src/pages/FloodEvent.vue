@@ -24,7 +24,7 @@ const floodEvents = [
         link: 'https://www.arcgis.com/apps/webappviewer/index.html?id=2b0fa66b05534e7780e7396234b7c6f3',
         title: 'Flood Susceptibility Map of Ikorodu',
         formatTitle: truncate(`Global Flood Risk Assessment - Regional Realities`,11),
-        src: 'default1.png',
+        src: 'floodmap3.jpeg',
         id: 1,
         tag: 'map'
     },
@@ -32,7 +32,7 @@ const floodEvents = [
         link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=d07dba63dbd84fbbb555d6c6087759f3',
         title: `Flood Susceptibility Map of Ilorin`,
         formatTitle: truncate(`using geospatial technology in geohazard mapping saves lives`,11),
-        src: 'default1.png',
+        src: 'floodmap2.jpeg',
         id: 3,
         tag: 'map'
     },
@@ -40,7 +40,7 @@ const floodEvents = [
         link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=7cba8204d65c4ceda63c7c89e632606b',
         title: `Flood Susceptibility Map of Maiduguri City`,
         formatTitle: truncate(`All about GRMI hashnode mapathon`,11),
-        src: 'default1.png',
+        src: 'floodmap1.jpeg',
         id: 4,
         tag: 'map'
     },

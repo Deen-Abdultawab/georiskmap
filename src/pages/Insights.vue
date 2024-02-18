@@ -50,7 +50,7 @@ const insights = [
     },
     {
         link: 'https://geospatiallypodcast.wordpress.com/2021/04/01/using-geospatial-technology-in-geohazard-mapping-saves-lives/',
-        title: `using geospatial technology in geohazard mapping saves lives`,
+        title: `podcast: using geospatial technology in geohazard mapping saves lives`,
         formatTitle: truncate(`using geospatial technology in geohazard mapping saves lives`,11),
         src: 'podcast.jpeg',
         id: 4
@@ -64,9 +64,9 @@ const insights = [
     },
     {
         link: 'https://tasks.hotosm.org/organisations/geohazards-risk-mapping-initiative',
-        title: `GEO Hazards Mapping Initiative`,
+        title: `Collaborative mapping for flood preparedness by using HOTOSM platoform`,
         formatTitle: truncate(`GEO Hazards Mapping Initiative`,11),
-        src: 'ins6.png',
+        src: 'ins17.jpeg',
         id: 6
     },
     {
@@ -80,7 +80,7 @@ const insights = [
         link: 'https://www.preventionweb.net/news/gp2022-ignite-stage-improving-flood-preparedness-communities-nigeria-through-provision-flood',
         title: `GP2022 Ignite Stage: Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps`,
         formatTitle: truncate(`GP2022 Ignite Stage: Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps`,11),
-        src: 'ins9.png',
+        src: 'ins16.jpeg',
         id: 9
     },
     {
@@ -94,7 +94,7 @@ const insights = [
         link: 'https://storymaps.arcgis.com/stories/a34fab4b205048e6af22ec8df1f83e8e',
         title: `In commensuration of the GIS Day 2021, a youth-led initiative "Geohazard Risk Mapping" Initiative hosted a virtual GISday event.`,
         formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
-        src: 'default1.png',
+        src: 'ins15.jpeg',
         id: 12
     },
     {

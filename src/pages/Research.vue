@@ -46,13 +46,6 @@ const researchs = [
         title: `GEOSPATIAL MAPPING OF FLOOD HAZARD USING MULTI-CRITERIA APPROACH IN FUFORE LOCAL GOVERNMENT AREA, NORTH EASTERN NIGERIA`,
         formatTitle: truncate(`sambus news letter`,11),
         src: 'default1.png',
-        id: 4
-    },
-    {
-        link: 'https://d1wqtxts1xzle7.cloudfront.net/67519972/Flood_hazard_mapping_in_Adamawa_NE_Nigeria_Ogunwumi_et_al_2021-libre.pdf?1622840535=&response-content-disposition=inline%3B+filename%3DGEOSPATIAL_MAPPING_OF_FLOOD_HAZARD_USING.pdf&Expires=1708431472&Signature=Pfn3~Oan4jp55H86EQw1Bxghr~iqRBm~knWrtTE3RQf7wOp4XiO0E~KtpmVfLgjieraD97mAXNjBQAhkQSaAYdN5Tyq7OUFGKmWgoOoPwHr-5Wszy5rLJTGSB50qjkcjhsl2YlIPP0cCkvrfxXNY4whdtCmoAN0PPVZs9You3drQSLbUoOtyqqh9hUvxiBdOJ0qWrUVuqS2YFNlyLFjy4U1xfOgayzOcrhoIqtSJpwSwpnxGUnG7-u-pF0LnRtY-WaTsqSi6G3BBF1lizeLT8bJEqiqeEXPVUm71HxDfbp4AQWv1b1xra2MnRLw08bBnWcmvxUcE0iDJudvT0LVjYw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA',
-        title: `GEOSPATIAL MAPPING OF FLOOD HAZARD USING MULTI-CRITERIA APPROACH IN FUFORE LOCAL GOVERNMENT AREA, NORTH EASTERN NIGERIA`,
-        formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
         id: 5
     },
     {

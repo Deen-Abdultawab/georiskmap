@@ -24,35 +24,35 @@ const researchs = [
         link: 'https://www.graphyonline.com/archives/archivedownload.php?pid=IJEES-187',
         title: `Where would be Flooded in 2021: A Geospatial Analysis of Flood Susceptibility in Amuwo Odofin, Lagos State, Nigeria`,
         formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
+        src: 'paper4.jpeg',
         id: 1
     },
     {
         link: 'https://www.researchgate.net/publication/366634874_I_lost_all_I_had_to_the_flood_A_Post-Disaster_Assessment_of_the_2018_Kogi_State_Flood_in_Nigeria?enrichId=rgreq-75e721bb7a21c9f65223340874132830-XXX&enrichSource=Y292ZXJQYWdlOzM2NjYzNDg3NDtBUzoxMTQzMTI4MTEwOTgyMjk1OUAxNjcyMjIyNjg0MzMy&el=1_x_3&_esc=publicationCoverPdf',
         title: `A Post-Disaster Assessment of the 2018 Kogi State Flood in Nigeria`,
         formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
+        src: 'paper5.jpeg',
         id: 2
     },
     {
         link: 'https://www.researchsquare.com/article/rs-1721944/v1',
         title: `Flood Susceptibility Mapping of Internally Displaced Persons Camps in Maiduguri, Borno State Nigeria`,
         formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
+        src: 'paper3.jpeg',
         id: 3
     },
     {
         link: 'https://d1wqtxts1xzle7.cloudfront.net/67519972/Flood_hazard_mapping_in_Adamawa_NE_Nigeria_Ogunwumi_et_al_2021-libre.pdf?1622840535=&response-content-disposition=inline%3B+filename%3DGEOSPATIAL_MAPPING_OF_FLOOD_HAZARD_USING.pdf&Expires=1708431472&Signature=Pfn3~Oan4jp55H86EQw1Bxghr~iqRBm~knWrtTE3RQf7wOp4XiO0E~KtpmVfLgjieraD97mAXNjBQAhkQSaAYdN5Tyq7OUFGKmWgoOoPwHr-5Wszy5rLJTGSB50qjkcjhsl2YlIPP0cCkvrfxXNY4whdtCmoAN0PPVZs9You3drQSLbUoOtyqqh9hUvxiBdOJ0qWrUVuqS2YFNlyLFjy4U1xfOgayzOcrhoIqtSJpwSwpnxGUnG7-u-pF0LnRtY-WaTsqSi6G3BBF1lizeLT8bJEqiqeEXPVUm71HxDfbp4AQWv1b1xra2MnRLw08bBnWcmvxUcE0iDJudvT0LVjYw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA',
         title: `GEOSPATIAL MAPPING OF FLOOD HAZARD USING MULTI-CRITERIA APPROACH IN FUFORE LOCAL GOVERNMENT AREA, NORTH EASTERN NIGERIA`,
         formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
+        src: 'paper2.jpeg',
         id: 5
     },
     {
         link: 'https://link.springer.com/article/10.1007/s40808-021-01197-2',
         title: `Multi-criteria modelling of drought: a study of Brandenburg Federal State, Germany`,
         formatTitle: truncate(`sambus news letter`,11),
-        src: 'default1.png',
+        src: 'paper1.jpeg',
         id: 6
     },
 ]

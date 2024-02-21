@@ -111,6 +111,13 @@ const insights = [
         src: 'ins12.jpg',
         id: 14
     },
+    {
+        link: 'https://www.downtoearth.org.in/news/africa/how-climate-change-is-wreaking-havoc-on-communities-in-niger-delta-85308',
+        title: `How climate change is wreaking havoc on communities in Niger Delta`,
+        formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
+        src: 'ins18.jpg',
+        id: 15
+    },
     
 ]
 

@@ -42,7 +42,7 @@ const props = defineProps({
         >
           <MenuItems
           
-            class="absolute  merri right-0 mt-2 w-56 p-4 min-w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]"
+            class="absolute merri right-0 mt-2 w-56 p-4 min-w-70 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[999]"
           >
           <div v-for="link in props.model.links" :key="link.id" class="px-1 py-1">
              

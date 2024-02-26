@@ -32,4 +32,7 @@ body {
   .transition {
     @apply transition-all ease-linear duration-100;
   }
+  .show {
+    @apply z-[9999] opacity-100;
+  }
 }

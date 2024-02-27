@@ -74,15 +74,11 @@ console.log(emailRef.value);
                 <router-link class="M16 white links" @click="scrollToTop" to="/completed-projects"
                     style="margin-bottom: 12px;">
                     <span>
-                        Projects
+                       Cartographic Maps
                     </span>
                 </router-link>
 
-                <router-link class="M16 white links" @click="scrollToTop" to="/" style="margin-bottom: 12px;">
-                    <span>
-                        Portal
-                    </span>
-                </router-link>
+                
 
                 <router-link class="M16 white links" @click="scrollToTop" to="/events">
                     <span style="font-weight: 300;">

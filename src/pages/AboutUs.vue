@@ -1,8 +1,7 @@
 <script setup>
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
-import "../assets/styles/App.scss"
-
+  import Navbar from '../components/Navbar.vue'
+  import Footer from '../components/Footer.vue'
+  import "../assets/styles/App.scss"
 </script>
 
 <template>
@@ -32,7 +31,7 @@ import "../assets/styles/App.scss"
       <div class=" mt-n8 mt-lg-n13">
         <div class="row justify-content-center">
           <div class="">
-            <div class="border-light p-12 lg:p-20 " style="background-color: #FFFFFF;">
+            <div class="border-light p-12 lg:p-20 mob:p-6" style="background-color: #FFFFFF;">
               <div class="text-[2rem] cabin font-semibold heading">
                 WHO ARE WE?
               </div>

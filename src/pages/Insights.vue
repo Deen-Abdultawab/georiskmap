@@ -85,7 +85,7 @@ const insights = [
     },
     {
         link: 'https://sambusgeospatial.com/wp-content/uploads/2023/11/Sambus-Newsletter-8th-Edition-3.pdf',
-        title: `Harnessing GIS to Support Early Flood Warning in Nigeria - Sambus Technology Newslette`,
+        title: `Harnessing GIS to Support Early Flood Warning in Nigeria - Sambus Technology Newsletter`,
         formatTitle: truncate(`sambus news letter`,11),
         src: 'ins10.png',
         id: 10

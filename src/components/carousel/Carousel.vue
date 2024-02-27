@@ -90,12 +90,12 @@ export default defineComponent({
 })
 </script>
 
-<template>
-  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints">
+<template id="carousel">
+  <Carousel :transition="300" v-bind="settings" :breakpoints="breakpoints" class="px-4">
     <Slide v-for="slide in AppsData" :key="slide.id">
-      <div  class="connection-card">
-        <div class="card m-3 text-white h-[450px] w-[300px] md:w-[350px] rounded-lg flex items-end relative" >
-          <img :src="getImgUrl(slide.placeholder)" alt="" class="absolute top-0 left-0 w-full h-full z-[1] object-fill">
+      <div  class="connection-card w-full h-full mob:w-[95%] p-0 m-0 rounded-[0.5rem]">
+        <div class=" text-white w-full rounded-lg flex items-end relative h-full" >
+          <img :src="getImgUrl(slide.placeholder)" alt="" class="absolute top-0 left-0 w-full h-full z-[1] object-fill overflow-hidden rounded-[0.5rem]">
           <div class="absolute top-0 left-0 w-full h-full z-[2] bg-[rgba(0,0,0,0.3)]">
           </div>
 
@@ -138,7 +138,7 @@ export default defineComponent({
 }
 
 .carousel__viewport ol {
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .carousel__viewport li {
@@ -165,7 +165,7 @@ export default defineComponent({
 .carousel__slide {
   height: 480px;
   width: 290px;
-  padding: 5px;
+  border-radius: 0.5rem;
 }
 
 
@@ -179,14 +179,8 @@ export default defineComponent({
 
 .carousel .carousel-control:hover {
   background: #164133;
-  /* opacity: 1; */
 }
 
-@media only screen and (max-width:1024px){
-  .carousel__viewport ol {
-    gap: 0rem;
-  }
-}
 </style>
   
 

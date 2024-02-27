@@ -82,7 +82,7 @@ import "../assets/styles/App.scss"
                           </a>
                       </div>
                       <div>
-                          <a href="taiwoogunwumi@yahoo.com">
+                          <a href="mailto: taiwoogunwumi@yahoo.com" target="_blank">
                               <img src='../assets/icons/userMail.png' alt="GRMI MAIL">
                           </a>
                       </div>

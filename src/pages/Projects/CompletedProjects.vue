@@ -51,7 +51,7 @@ const getImgUrl = (path) => {
         <div>
             <div class="row text-center mb-5">
                 <div class="C49 cabin text-[3rem] font-bold text-center tab:text-[1.5rem]">
-                    COMPLETED PROJECTS
+                    CARTOGRAPHIC MAP
                 </div>
             </div>
 

@@ -51,9 +51,9 @@ const awards = [
     },  
     {
         link: '../pdfs/Recognitions.pdf',
-        title: `UN recognition`,
+        title: `Recognition Letter from the United Nations Secretary-General’s Envoy on Youth`,
         formatTitle: truncate(`All about GRMI hashnode mapathon`,11),
-        src: 'default1.png',
+        src: 'award5.jpeg',
         id: 6
     },  
 ]

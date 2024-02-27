@@ -7,12 +7,12 @@
 <style scoped>
     .spin {
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
         margin: 30px auto;
-        border: 3px solid transparent;
+        border: 5px solid transparent;
         border-radius: 50%;
-        border-top-color: var(--clr-primary-5);
+        border-top-color: white;
         animation: spin 1s ease-in-out infinite;
     }
 

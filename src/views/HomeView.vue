@@ -14,6 +14,11 @@ import Footer from '../components/Footer.vue'
 // import "../assets/styles/main.scss"
 import "../assets/styles/App.scss"
 
+import { createScrollRevealDirective } from 'vue-scroll-reveal'; 
+const vScrollReveal = createScrollRevealDirective({
+    delay: 300,
+    duration: 150,
+});
 
 </script>
 

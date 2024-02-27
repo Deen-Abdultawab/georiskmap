@@ -1,7 +1,7 @@
 <script setup>
 import emailjs from 'emailjs-com'
 import { ref } from "vue";
-import GetInvolvedModal from "./modals/GetInvolvedModal.vue";
+import Spinner from '../components/Spinner.vue';
 const isOpen = ref(false)
 const message = ref('')
   const name = ref('')
@@ -13,6 +13,17 @@ const openModal = ()=>{
 const closeModal = ()=>{
     isOpen.value = false
   }
+
+  
+
+  const isLoading = ref(false)
+  function loadLoader(){
+    isLoading.value = true
+    setTimeout(()=>{
+      isLoading.value = false
+    },3000)
+  }
+
 
   function sendMail(e){
     console.log('clicked', name.value)
@@ -26,6 +37,7 @@ const closeModal = ()=>{
         message.value = ''
         mail.value = ''
         closeModal()
+        loadLoader()
       } catch (error) {
         console.log(error)
       }
@@ -36,12 +48,11 @@ const closeModal = ()=>{
 </script>
 
 <template>
-    <div class="relative">
-
-        <div class="hero-image flex justify-center items-center relative">
-            <div class="hero-text w-full flex justify-center items-center">
-                        <div class="flex max-w-[700px] items-center justify-center mb-4 ">
-                            <h5 class="text-[1.5rem] cabin md:text-[1.8rem] font-semibold  lg:text-[2.4rem] white">We are always looking to expand our team. If you are a GIS Specialist we would love to work with
+    <div class="relative h-auto">
+        <div class="hero-image flex justify-center items-center p-6">
+            <div class="hero-text justify-center items-center ">
+                        <div class="flex w-full items-center justify-center mb-4 ">
+                            <h5 class="text-[1.5rem] cabin md:text-[1.8rem] font-semibold  lg:text-[2.4rem] white">We are always looking to expand our team. If you are a Disaster Risk Reduction Specialist, Water Risk Specialist and Geospatial Scientist, we would love to work with
                             you.</h5>
                         </div>
     
@@ -61,10 +72,10 @@ const closeModal = ()=>{
                     </div>
                  
         </div>
-        <div id="overlay" class="fixed top-0 backdrop-blur-sm bg-[rgba(0,0,0,0.5)] w-screen h-full transition z-[99]" v-if="isOpen">
-
+        <div id="overlay" class="fixed top-0 backdrop-blur-sm bg-[rgba(0,0,0,0.5)] w-screen h-full transition z-[99] grid place-items-center" v-if="isOpen||isLoading">
+          <Spinner v-if="isLoading" class=""/>
         </div>
-        <form id="myForm" class=" bg-white w-[70%] tab:w-[90%] mx-auto absolute top-[-10rem] h-[35rem] left-[50%] translate-x-[-50%] rounded-[0.5rem] z-[999]" v-if="isOpen" @submit.prevent="sendMail">
+        <form id="myForm" class=" bg-white w-[70%] tab:w-[90%] mx-auto absolute top-[-10rem] h-auto left-[50%] translate-x-[-50%] rounded-[0.5rem] z-[999] p-6" v-if="isOpen" @submit.prevent="sendMail">
             <div class="flex flex-col min-h-full items-center justify-center p-4 text-center">
                 
                 <div class="flex w-full flex-col space-y-4">
@@ -84,7 +95,7 @@ const closeModal = ()=>{
                   <div class="mt-4 flex gap-4">
                     <a
                       type="button"
-                      class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 cursor-pointer"
                       @click="closeModal"
                     >
                       Close
@@ -92,7 +103,7 @@ const closeModal = ()=>{
     
                     <button
                       type="button"
-                      class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      class="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 cursor-pointer"
                       @click="sendMail"
                     >
                       Submit
@@ -106,12 +117,11 @@ const closeModal = ()=>{
 
 <style scoped>
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/v1695971112/get_involved_o72npf.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/bg4.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
     background-size: cover;
-    padding: 0 40px 0 40px;
+    
 }
 
 .hero-text {

@@ -14,13 +14,13 @@
               generating applications, and <br />
               dissemination of Geohazard maps using advanced Geospatial Technology</p>
             <div class="flex gap-4 flex-col md:flex-row">
-            <button class=" text-lg bg-brandgreen transition rounded-[0.5rem]">
-              <router-link class="px-10 py-4" :to="{ name: 'floodEvent'}">
+            <router-link class="" :to="{ name: 'floodEvent'}">
+              <button class=" text-lg bg-brandgreen transition rounded-[0.5rem] px-10 py-4 w-full">
                 View Flood Maps
-              </router-link>
-            </button>
+              </button>
+            </router-link>
           <router-link to="/dashboard">
-            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none transition rounded-[0.5rem]">View Past Flood Events</button>
+            <button class="px-10 py-4 text-lg border-[#EAF7F3] border bg-none transition rounded-[0.5rem] w-full">View Past Flood Events</button>
           </router-link>
 
       
@@ -33,7 +33,7 @@
 
 <style scoped>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://res.cloudinary.com/waleszn/image/upload/q_30/who_we_are_bg_image_d1xyhj.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../assets/icons/bg1.png');
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   height: 100vh;
   background-position: center;

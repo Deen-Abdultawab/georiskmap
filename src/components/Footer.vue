@@ -84,7 +84,7 @@ console.log(emailRef.value);
                     </span>
                 </router-link>
 
-                <router-link class="M16 white links" @click="scrollToTop" to="/">
+                <router-link class="M16 white links" @click="scrollToTop" to="/events">
                     <span style="font-weight: 300;">
                         Events
                     </span>

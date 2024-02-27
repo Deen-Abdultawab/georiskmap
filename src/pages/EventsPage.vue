@@ -77,7 +77,7 @@ const events = [
                             <div class="C31 mt-30 uppercase text-[#134A39] text-[1rem] lg:text-[0.9rem] font-bold w-full mob:text-[0.7rem]">
                                {{ event.title }}
                             </div>
-                            <a :href="event.src" class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold hover:bg-primary500  transition w-[40%] text-center mx-auto cursor-pointer text-[0.7rem]">Watch on Youtube</a>
+                            <a :href="event.src" class="bg-brandgreen text-white px-4 py-4 rounded-md font-bold hover:bg-primary500  transition w-[40%] text-center mx-auto cursor-pointer text-[0.7rem]" target="_blank">Watch on Youtube</a>
                         </div>
                     </article>
                 </div>

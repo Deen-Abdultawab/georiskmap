@@ -62,7 +62,12 @@ const NavData = [
             {
                 id: 1,
                 to: "/completed-projects",
-                desc: "Completed",
+                desc: "Cartographic Map",
+            },
+            {
+                id: 1,
+                to: "/floodEvent",
+                desc: "Webmap & StoryMap",
             },
             // {
             //     id: 2,
@@ -85,11 +90,6 @@ const NavData = [
         id: 4,
         name: "Data",
         links: [
-            {
-                id: 1,
-                to: "/",
-                desc: "Portal",
-            },
             {
                 id: 2,
                 to: "/dashboard",
@@ -151,18 +151,14 @@ const NavData = [
             {
                 id: 3,
                 to: "/awards",
-                desc: "Awards and Recognitions",
+                desc: "Awards & Recognitions",
             },
             {
                 id: 3,
                 to: "/reports",
                 desc: "Annual Reports",
             },
-            {
-                id: 4,
-                to: "/",
-                desc: "Regions: NG, GH",
-            },
+            
            
            
 

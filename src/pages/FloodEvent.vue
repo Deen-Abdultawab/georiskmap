@@ -47,7 +47,7 @@ const floodEvents = [
     {
         link: 'https://africageoportal.maps.arcgis.com/apps/webappviewer/index.html?id=1205a4ecde984a55841f93e837828a70',
         title: `Flood Susceptibility Map of Ilorin`,
-        src: 'default1.png',
+        src: 'ins20.png',
         id: 2,
         tag: 'map'
     },
@@ -55,7 +55,7 @@ const floodEvents = [
         link: 'https://storymaps.arcgis.com/stories/39d5b1d1e2114b74aebdf8fe73ecb993',
         title: `Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,
         formatTitle: truncate(`Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,11),
-        src: 'default1.png',
+        src: 'ins7.png',
         tag: 'storymap',
         id: 7
     },
@@ -63,7 +63,7 @@ const floodEvents = [
         link: 'https://storymaps.arcgis.com/stories/528572dd623141589a03bbba059df683',
         title: `Mapping of Flood-Prone Areas in Kogi State Nigeria`,
         formatTitle: truncate(`Strengthening Community Resilience through Collaborative Geo-Hazard Risk Mapping in Jos North, Nigeria`,11),
-        src: 'default1.png',
+        src: 'ins21.png',
         tag: 'storymap',
         id: 7
     },
@@ -88,7 +88,7 @@ const floodEvents = [
             <div class="">
                 <div class="">
                     <div class="grid grid-cols-2 mob:grid-cols-1 gap-6">
-                        <a :href="card.link" v-for="card in floodEvents" :key="card.id" class=" transition p-4 rounded-[0.5rem] cursor-pointer">
+                        <a :href="card.link" v-for="card in floodEvents" :key="card.id" class=" transition p-4 rounded-[0.5rem] cursor-pointer" target="_blank">
                             <div class="pic hover:scale-105 duration-500">
                                 <img :src="getImgUrl(card.src)" class="img-fluid overflow-hidden h-[15rem] w-full object-fill rounded-t-[0.5rem]" alt="Responsive image">
                             </div>

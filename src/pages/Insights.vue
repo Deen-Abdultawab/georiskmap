@@ -57,14 +57,14 @@ const insights = [
     },
     {
         link: 'https://grmi.hashnode.dev/mapathon',
-        title: `All about GRMI hashnode mapathon`,
+        title: `Collaborative Mapping of Flood zone with masters students of the University of Bonn, Germany.`,
         formatTitle: truncate(`All about GRMI hashnode mapathon`,11),
         src: 'mapathon.jpeg',
         id: 5
     },
     {
         link: 'https://tasks.hotosm.org/organisations/geohazards-risk-mapping-initiative',
-        title: `Collaborative mapping for flood preparedness by using HOTOSM platoform`,
+        title: `Collaborative mapping for flood preparedness by using HOTOSM platform`,
         formatTitle: truncate(`GEO Hazards Mapping Initiative`,11),
         src: 'ins17.jpeg',
         id: 6
@@ -85,7 +85,7 @@ const insights = [
     },
     {
         link: 'https://sambusgeospatial.com/wp-content/uploads/2023/11/Sambus-Newsletter-8th-Edition-3.pdf',
-        title: `sambus news letter`,
+        title: `Harnessing GIS to Support Early Flood Warning in Nigeria - Sambus Technology Newslette`,
         formatTitle: truncate(`sambus news letter`,11),
         src: 'ins10.png',
         id: 10
@@ -101,7 +101,7 @@ const insights = [
         link: 'https://globalplatform.undrr.org/conference-event/improving-flood-preparedness-communities-nigeria-through-provision-flood-early',
         title: `Improving flood preparedness for communities in Nigeria through the provision of flood early warning maps.`,
         formatTitle: truncate(`Harnessing Geospatial Technology to Support Early Flood Warning in Nigeria`,11),
-        src: 'default1.png',
+        src: 'ins19.png',
         id: 12
     },
     {
@@ -139,7 +139,7 @@ const insights = [
             <div class="">
                 <div class="">
                     <div class="grid grid-cols-2 mob:grid-cols-1 gap-6">
-                        <a :href="card.link" v-for="card in insights" :key="card.id" class=" transition p-4 rounded-[0.5rem] cursor-pointer">
+                        <a :href="card.link" v-for="card in insights" :key="card.id" class=" transition p-4 rounded-[0.5rem] cursor-pointer" target="_blank">
                             <div class="pic hover:scale-105 duration-500">
                                 <img :src="getImgUrl(card.src)" class="img-fluid overflow-hidden h-[15rem] w-full object-fill rounded-t-[0.5rem]" alt="Responsive image">
                             </div>

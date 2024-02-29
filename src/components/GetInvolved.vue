@@ -49,9 +49,9 @@ const closeModal = ()=>{
 
 <template>
     <div class="relative h-auto">
-        <div class="hero-image flex justify-center items-center p-6">
-            <div class="hero-text justify-center items-center ">
-                        <div class="flex w-full items-center justify-center mb-4 ">
+        <div class="hero-image flex justify-center items-center p-6 py-20">
+            <div class="hero-text justify-center items-center w-[80%] tab:w-[90%] mob:w-[95%]">
+                        <div class="flex items-center justify-center mb-4">
                             <h5 class="text-[1.5rem] cabin md:text-[1.8rem] font-semibold  lg:text-[2.4rem] white">We are always looking to expand our team. If you are a Disaster Risk Reduction Specialist, Water Risk Specialist and Geospatial Scientist, we would love to work with
                             you.</h5>
                         </div>

@@ -89,7 +89,10 @@ console.log(emailRef.value);
 
             <div class="flex flex-col justify-start items-start mb-6" >
                 <div class="M20 white cabin" style="font-weight: 700;margin-bottom: 24px">CONTACT</div>
-                <span class="M16 white merri">mails@georiskmap.org</span>
+                <a href="mailto: mails@georiskmap.org" class="flex items-center gap-4 cursor-pointer">
+                    <span class="material-icons">mail</span>
+                    <span class="M16 white merri">mails@georiskmap.org</span>
+                </a>
             </div>
 
             <section class="newsletter">
